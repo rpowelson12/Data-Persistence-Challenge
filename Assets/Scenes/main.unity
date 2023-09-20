@@ -546,8 +546,6 @@ MonoBehaviour:
   Ball: {fileID: 177912862}
   highScoreText: {fileID: 2078529056}
   ScoreText: {fileID: 188020406}
-  highScore: 20
-  highScorePlayer: Randy
   GameOverText: {fileID: 474497238}
 --- !u!1 &455529321
 GameObject:
@@ -689,7 +687,9 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'GAME OVER
 
-    Press Space to Restart'
+    Press Space to Restart
+
+    ''q'' to Switch Player'
 --- !u!222 &474497241
 CanvasRenderer:
   m_ObjectHideFlags: 0

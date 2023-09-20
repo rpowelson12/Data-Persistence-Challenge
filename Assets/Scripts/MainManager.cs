@@ -35,13 +35,14 @@ public class MainManager : MonoBehaviour
 
     private void Update()
     {
+        UpdateHighScoreText(m_Points);
+
         StartGame();
+
         if (m_GameOver)
         {
             Restart();
         }
-        
-        UpdateHighScoreText(m_Points);
 
         RebuildGame();
     }
@@ -116,6 +117,9 @@ public class MainManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        } else if (Input.GetKeyDown(KeyCode.Q))
+        {
+            SceneManager.LoadScene(0);
         }
     }
 
